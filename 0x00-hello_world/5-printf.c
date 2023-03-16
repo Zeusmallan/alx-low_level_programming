@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - A programmame that prints a line using the pritf function
- * return: 0 (Success)
+ * Return: 0 (Success)
  */
 
 int main(void)
