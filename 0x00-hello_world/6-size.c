@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Programme that prints the size of various types on the computer it is compiled on.
+ * main - Programme that prints the size of various types on the computer
  * Return: 0 (Pass)
  */
 int main(void)
@@ -10,7 +10,6 @@ int b;
 long int c;
 long long int d;
 float f;
-
 printf("The size of a char %lu byte(s)\n", (unsigned long)sizeof(a));
 printf("The size of a int %lu byte(s)\n", (unsigned long)sizeof(b));
 printf("The size of a long int %lu byte(s)\n", (unsigned long)sizeof(c));
