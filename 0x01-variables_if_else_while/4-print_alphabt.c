@@ -1,19 +1,22 @@
 #include <stdio.h>
 /**
- * main - entry point.
- * Description: Print alphabets, excep e and q.
- * Retuurn: 0
+ * main - Entry point.
+ * Description: 'Print alphabets, except e and q'
+ * Return: 0 (Success)
  */
 int main(void)
+
 {
 	int m = 97;
 
 	while (m <= 97)
-	
-	if (m == 101 || m == 113)
+	{
+		if (m == 101 || m == 113)
 	{	m++;
 		continue;
 	}
+	putchar(n);
+		n++;
 	putchar('\n');
 	return (0);
 }
