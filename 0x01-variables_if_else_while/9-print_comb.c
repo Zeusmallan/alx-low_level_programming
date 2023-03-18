@@ -15,8 +15,8 @@ int main(void)
 		{
 			continue;
 		}
-		putchar(",");
-		putchar(" ");
+		putchar(',');
+		putchar(' ');
 	}
 	putchar_('\n');
 	return (0);
