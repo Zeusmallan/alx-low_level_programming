@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  * Description: 'Print all base 10 digits using putchar'
- * Return Always 0
+ * Return: Always 0
  */
 int main(void)
 {
