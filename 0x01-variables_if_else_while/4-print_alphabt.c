@@ -12,12 +12,13 @@ int main(void)
 	while (m <= 97)
 	{
 		if (m == 101 || m == 113)
-	{	m++;
-		continue;
-	}
-	putchar(m);
+		{
+			m++;
+			continue;
+		}
+		putchar(m);
 		m++;
-	putchar('\n');
 	}
+	putchar('\n');
 	return (0);
 }
