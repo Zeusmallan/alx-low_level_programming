@@ -9,9 +9,9 @@ int main(void)
 	int m = 97;
 
 	while (m <= 97)
-	{
+	
 	if (m == 101 || m == 113)
-		m++;
+	{	m++;
 		continue;
 	}
 	putchar('\n')
