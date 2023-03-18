@@ -15,8 +15,10 @@ int main(void)
 			m++;
 			continue;
 		}
+		{
 		putchar(m);
 		m++;
+		}
 	}
 	putchar('\n');
 	return (0);
