@@ -10,7 +10,7 @@ int main(void)
 
 	while (n <= 122)
 	{
-	putchar('$d', n);
+	putchar(n);
 	n++;
 	}
 	{
