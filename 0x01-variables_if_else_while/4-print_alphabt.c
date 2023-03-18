@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  * Description: 'Print alphabets, except e and q'
- * Return: 0
+ * Return: Always 0
  */
 int main(void)
 {
@@ -10,16 +10,14 @@ int main(void)
 
 	while (m <= 97)
 	{
-		if (m == 101 || m == 113)
 		{
-			m++;
+			if (m == 101 || m == 113)
+			{m++;
 			continue;
 		}
-		{
 		putchar(m);
 		m++;
-		}
+		putchar('\n);
 	}
-	putchar('\n');
-	return (0);
+		return (0);
 }
