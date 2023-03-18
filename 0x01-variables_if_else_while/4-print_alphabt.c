@@ -1,11 +1,10 @@
 #include <stdio.h>
 /**
- * main - Entry point.
+ * main - Entry point
  * Description: 'Print alphabets, except e and q'
- * Return: 0 (Success)
+ * Return: 0
  */
 int main(void)
-
 {
 	int m = 97;
 
