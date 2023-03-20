@@ -6,9 +6,8 @@
  */
 int main(void)
 {
-        int m = 0;
-        int j = 0;
-
+int m = 0;
+int j = 0;
 	while (j < 10)
 	{
 		m = 0;
