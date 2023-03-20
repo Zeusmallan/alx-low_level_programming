@@ -18,12 +18,12 @@ int main(void)
 			a = 0;
 			while (a < 10)
 			{
-				if (a != b && b != c && c < d && b < a)
+				if (a != b && b != c && c < b && b < a)
 				{
 					putchar('0' + a);
 					putchar('0' + b);
 					putchar('0' + c);
-					if (c + d + e != 9 + 8 + 7)
+					if (a + b + c != 9 + 8 + 7)
 					{
 						putchar(',');
 						putchar(' ');
