@@ -7,26 +7,28 @@
 int main(void)
 {
         int m;
-        int j;
+        int j = 0
 
-        for (m = 0; m <= 9; m++)
-        {
-                for (j = 0; j <= 9; j++)
-                {
-                        if (m < j)
-                        {
-                                putchar(m);
-                                putchar(j);
+	while (j < 10)
+	{
+		m = 0;
+		while (m < 10)
+		{
+			if (j != m && j < m)
+			{
+				putchar('0' + j);
+				putchar('0' + m);
 
-                                if (m != 8 || (m == 8 && j != 9))
-                                {
-                                        putchar(' ');
-                                        putchar(',');
-                                }
-                        }
-                }
-        }
-        putchar('\n');
-        return (0);
+				if (m + j != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+			m++
+		}
+		j++
+	}
+	putchar('\n');
+	return (0);
 }
-
