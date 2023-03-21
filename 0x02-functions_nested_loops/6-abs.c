@@ -1,17 +1,17 @@
 #include "main.h"
 /**
  * _abs - Prints the absolute value of an integer.
- * @int: Integer or number.
+ * @k: Integer or number.
  * Return: absolute value.
  */
-int _abs(int);
+int _abs(int k);
 {
-	if (i >= 0)
+	if (k >= 0)
 	{
 		return (1);
 	}
 	else
 	{
-		return (i * -1);
+		return (k * -1);
 	}
 }
