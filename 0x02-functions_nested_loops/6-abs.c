@@ -4,7 +4,7 @@
  * @k: Integer or number.
  * Return: absolute value.
  */
-int _abs(int k);
+int _abs(int k)
 {
 	if (k >= 0)
 	{
