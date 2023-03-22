@@ -17,13 +17,9 @@ void print_to_98(int n)
 				printf("\n");
 				break;
 			}
-			else if
-			{
-				printf("%d", n);
-			}
 		}
 	}
-	else
+	else if 
 	{
 		for (; n >= 98; n--)
 		{
@@ -34,9 +30,5 @@ void print_to_98(int n)
 				break;
 			}
 		}
-	}
-	else 
-	{
-		printf("%d, ", n);
 	}
 }
