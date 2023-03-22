@@ -17,7 +17,7 @@ void print_to_98(int n)
 				printf("\n");
 				break;
 			}
-			else
+			else if
 			{
 				printf("%d", n);
 			}
@@ -35,7 +35,7 @@ void print_to_98(int n)
 			}
 		}
 	}
-	else
+	else 
 	{
 		printf("%d, ", n);
 	}
