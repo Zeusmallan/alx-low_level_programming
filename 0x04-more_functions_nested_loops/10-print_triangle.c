@@ -20,10 +20,10 @@ void print_triangle(int size)
 					_putchar('#');
 				else
 					_putchar(' ');
-				begin++;
+				begin++
 			}
-		begin = 0;
-		_putchar('\n');
+			begin = 0;
+			_putchar('\n');
 		}
 	}
 }
