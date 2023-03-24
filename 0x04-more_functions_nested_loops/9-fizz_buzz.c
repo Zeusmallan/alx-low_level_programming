@@ -17,7 +17,7 @@ int main(void)
 			printf("Buzz");
 		if (being % 3 != 0 && begin % 5 != 0)
 			printf("%d", begin);
-		putchar(begin == end ? '\n' : ' ');
+		putchar(begin == end '\n' : ' ');
 		begin++;
 	}
 }
