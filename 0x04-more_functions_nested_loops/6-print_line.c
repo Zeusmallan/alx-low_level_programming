@@ -2,7 +2,7 @@
 /**
  * print_line - Function that draws straight line in the terminal.
  * @n: input number
- * Return: 0 (Success)
+ * Return: Straight line.
  */
 void print_line(int n)
 {
