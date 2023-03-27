@@ -2,7 +2,7 @@
 /**
  * _strlen - Function that returns the length of a string.
  * @s: The string tio return its length.
- * Return: 0 (Success).
+ * Return: Length (Success).
  */
 int _strlen(char *s)
 {
@@ -13,4 +13,5 @@ int _strlen(char *s)
 		length++;
 		s++;
 	}
+	return (length);
 }
