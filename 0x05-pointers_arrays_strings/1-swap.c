@@ -1,4 +1,4 @@
-#include "main."
+#include "main.h"
 /**
  * swap_int - Funcion that swaps the value of two intergers a and b.
  * @a: First interger to be swapped.
