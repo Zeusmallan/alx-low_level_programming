@@ -4,7 +4,7 @@
  * @dest: Destination.
  * @src: Character source.
  * @n: an array.
- * Return: Void.
+ * Return: dest.
  */
 char *_strncat(char *dest, char *src, int n)
 {
