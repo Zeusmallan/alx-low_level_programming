@@ -4,7 +4,7 @@
  * @j: Pointer of a string.
  * Return: j
  */
-char *string_toupper(char *)
+char *string_toupper(char *j)
 {
 	int m = 0;
 
