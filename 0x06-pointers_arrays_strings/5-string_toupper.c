@@ -1,4 +1,4 @@
-#inclue "main.h"
+#include "main.h"
 /**
  * string_toupper - Changes characters to uppper case
  * @j: Pointer of a string.
