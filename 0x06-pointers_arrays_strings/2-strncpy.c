@@ -18,7 +18,7 @@ char *_strncpy(char *dest, char *src, int n)
 	while (jakle < n)
 	{
 		dest[jakle] = '\0';
-		jakele++;
+		jakle++;
 	}
 	return (dest);
 }
