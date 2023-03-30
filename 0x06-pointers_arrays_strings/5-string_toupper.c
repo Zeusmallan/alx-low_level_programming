@@ -2,7 +2,7 @@
 /**
  * string_toupper - Changes characters to uppper case
  * @j: Pointer of a string.
- * Return: 0 (Success)
+ * Return: j
  */
 char *string_toupper(char *j)
 {
