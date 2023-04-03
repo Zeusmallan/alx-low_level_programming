@@ -10,6 +10,9 @@ void print_diagsums(int *a, int size)
 {
 	int sum0, sum1, c;
 
+	sum0 = 0;
+	sum1 = 0;
+
 	for (c = 0; c < size; c++)
 	{
 		sum0 = sum0 + a[c = size + c];
