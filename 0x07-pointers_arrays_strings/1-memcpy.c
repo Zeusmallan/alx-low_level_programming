@@ -3,7 +3,7 @@
  * _memcpy - Function that copies memory area.
  * @dest: A pointer of a variable of char type.
  * @src: A pointer of another char variable.
- * @int n: Number of bytes.
+ * @n: Number of bytes to be copied.
  * Return: dest.
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
