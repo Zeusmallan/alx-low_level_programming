@@ -5,7 +5,7 @@
  * @accept: Another pointer to variable of type char.
  * Return: 0
  */
-char *_strpbrk(char *s, char *accept);
+char *_strpbrk(char *s, char *accept)
 {
 	int m;
 
