@@ -2,7 +2,6 @@
 /**
  * print_chessboard - Function that prints a chess board.
  * @a:Pointer of an array.
- * @8: String size (Input).
  * Return: 0 (success).
  */
 void print_chessboard(char (*a)[8])
