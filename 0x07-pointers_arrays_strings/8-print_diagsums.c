@@ -17,7 +17,7 @@ void print_diagsums(int *a, int size)
 	{
 		sum0 = sum0 + a[c = size + c];
 	}
-	for (c = size - 1; c >= 0; c++)
+	for (c = size - 1; c >= 0; c--)
 	{
 		sum1 += a[c * size + (size - y - 1)];
 	}
