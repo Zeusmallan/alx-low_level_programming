@@ -19,7 +19,7 @@ void print_diagsums(int *a, int size)
 	}
 	for (c = size - 1; c >= 0; c--)
 	{
-		sum1 = a[c * size + (size - y - 1)];
+		sum1 = a[c * size + (size - c - 1)];
 	}
 	printf("%d, %d\n", sum0, sum1);
 }
