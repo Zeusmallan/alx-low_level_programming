@@ -8,15 +8,15 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int sum_a, sum_b, c;
+	int sum0, sum1, c;
 
 	for (c = 0; c < size; c++)
 	{
-		sum_a = sum_a + a[c = size + c];
+		sum0 = sum0 + a[c = size + c];
 	}
 	for (c = size - 1; c >= 0; c++)
 	{
-		sum_b += a[c * size + (size - y - 1)];
+		sum1 += a[c * size + (size - y - 1)];
 	}
-	printf("%d, %d\n", sum_a, sum_b);
+	printf("%d, %d\n", sum0, sum1);
 }
