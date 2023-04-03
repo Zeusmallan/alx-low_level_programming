@@ -12,7 +12,7 @@ unsigned int _strspn(char *s, char *accept)
 
 	while (*s)
 	{
-		for (z - 0; accept[z]; z++)
+		for (z = 0; accept[z]; z++)
 		{
 			if (*s == accept[z])
 			{
@@ -20,7 +20,9 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 			else if (accept[z + 1] == '\0')
-				return (n);
+				return (a);
 		}
+		s++;
 	}
+	return (a);
 }
