@@ -8,6 +8,11 @@
  */
 int main(int argc, char *argv[])
 {
-	printf("argc is = %d\n", argc);
+	int n;
+
+	for (n = 0; n < argc; n++)
+	{
+		printf("argv[%d] = %s\n", n, argv[n]);
+	}
 	return (0);
 }
