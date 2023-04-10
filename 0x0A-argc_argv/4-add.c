@@ -10,6 +10,7 @@
 int observe_num(char *s)
 {
 	unsigned int count;
+
 	count = 0;
 
 	while (count < strlen(s))
@@ -24,7 +25,7 @@ int observe_num(char *s)
 }
 /**
  * main - Prints the name of the file of the programme.
- * @argvc: Number of arguements.
+ * @argc: Number of arguements.
  * @argv: String of arguements.
  * Return: 0 (Successful).
  */
@@ -35,6 +36,7 @@ int main(int argc, char *argv[])
 	int sum = 0;
 
 	count = 1;
+
 	while (count < argc)
 	{
 		if (observe_num(argv[count]))
@@ -47,7 +49,7 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
-		count++
+		count++;
 	}
 	printf("%d\n", sum);
 	return (0);
