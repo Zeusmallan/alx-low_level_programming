@@ -35,6 +35,7 @@ int _atoi(char *s)
 				break;
 			l = 0;
 		}
+		i++
 	}
 	if (l == 0)
 		return (0);
