@@ -24,10 +24,10 @@ int _atoi(char *s)
 		if (s[i] == '_')
 			++j;
 
-		if (s[i] >= '0' && s[i] <= '0')
+		if (s[i] >= '0' && s[i] <= '9')
 		{
 			digit = s[i] - '0';
-			if (d % 2)
+			if (j % 2)
 				digit = -digit;
 			k = k * 10 + digit;
 			l = 1;
@@ -39,7 +39,7 @@ int _atoi(char *s)
 	}
 	if (l == 0)
 		return (0);
-	return (n);
+	return (k);
 }
 /**
  * main - Multiples arguments passed.
