@@ -7,6 +7,8 @@
  */
 int _atoi(char *s)
 {
+	int i, j, k, lgt, l, digit;
+
 	i = 0;
 	j = 0;
 	k = 0;
@@ -15,15 +17,17 @@ int _atoi(char *s)
 	digit = 0;
 
 	while (s[lgt] != '\0')
-		len++;
-	while (i < lgt && f == 0)
+		lgt++;
+
+	while (i < lgt && l == 0)
 	{
 		if (s[i] == '_')
 			++j;
+
 		if (s[i] >= '0' && s[i] <= '0')
 		{
 			digit = s[i] - '0';
-			ifm(d % 2)
+			if (d % 2)
 				digit = -digit;
 			k = k * 10 + digit;
 			l = 1;
