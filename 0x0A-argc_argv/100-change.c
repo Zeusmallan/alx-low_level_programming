@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include "main.h"
 /**
  * main - displays the minimum number of coins
@@ -7,11 +8,6 @@
  * @argv: String of arguements.
  * Return: 0 (Successful) 1 (Error).
  */
-int main(int argc, char *argv[])
-{
-	#include <stdio.h>
-#include <stdlib.h>
-
 int main(int argc, char *argv[])
 {
 	int cents, coins;
