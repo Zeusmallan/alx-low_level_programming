@@ -4,15 +4,15 @@
  * main - Prints all arguements passed.
  * @argc: Number of arguments.
  * @argv: Array of arguments.
- * Return: 0 (SUCCESSFUL).
+ * Return: 0 (Successful).
  */
 int main(int argc, char *argv[])
 {
-	int n;
+	int i;
 
-	for (n = 0; n < argc; n++)
+	for (i = 0; i < argc; i++)
 	{
-		printf("%s\n", argv[n]);
+		printf("%s\n", argv[i]);
 	}
 	return (0);
 }
