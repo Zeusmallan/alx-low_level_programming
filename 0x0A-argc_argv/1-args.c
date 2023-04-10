@@ -8,6 +8,11 @@
  */
 int main(int argc, char *argv[])
 {
-	printf("The number of arguments is: %d\n", argc - 1);
+	int n;
+
+	for (n = 0; n < argc; n++)
+	{
+		printf("%s\n", argv[n]);
+	}
 	return (0);
 }
