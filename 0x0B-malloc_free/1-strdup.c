@@ -1,4 +1,6 @@
 #include "main.h"
+#include <string.h>
+#include <stdlib.h>
 /**
  * strlen - Returns the length of thr string.
  * @s: String to count.
@@ -6,7 +8,7 @@
  */
 int strlen(char *s)
 {
-	int c;
+	unsigned int c;
 
 	while (s[c] != '\0')
 	{
@@ -21,19 +23,17 @@ int strlen(char *s)
  * @dest: Destination to place the copied elements.
  * Return: dest.
  */
-char *strcopy(char *src, char *dest)
+char *strcopy(char *dest, char *src)
 {
 	int l = 0;
 
 	while (src[l] != '\0')
 	{
-		src[l] = dest[l];
+		dest[l] = src[l];
 		l++;
 	}
-	if (dest[l] != '\0')
-	{
-		return (dest);
-	}
+	dest[l] = '\0';
+	return (dest);
 }
 
 /**
