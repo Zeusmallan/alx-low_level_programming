@@ -1,0 +1,1 @@
+This directory is about memory allocation in C programming language in the Alx software engineering programme. There are two types of memory allocation One is automatic or static memory allocation, while the other is dynamic memory allocation in C. The dynamic memory allocation is done using a number of functions such as the malloc, calloc, realloc and free.
