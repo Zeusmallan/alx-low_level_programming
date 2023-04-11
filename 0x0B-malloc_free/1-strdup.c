@@ -50,14 +50,14 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	size = strlen[str] + 1;
+	size = strlen(str) + 1;
 
 	dest = (char *) malloc(size * sizeof(char));
 	if (dest = 0)
 	{
 		return (NULL);
 	}
-	strcopy(str, dest);
+	strcopy(dest, str);
 	return (dest);
 }
 
