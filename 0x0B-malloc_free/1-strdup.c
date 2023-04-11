@@ -1,27 +1,63 @@
-#include <stdlib.h>
-#include <string.h>
 #include "main.h"
 /**
- * _strdup - Returns a pointer to a newly allocated space in memory,
- * which contains a copy of the string given as a parameter.
- * @str: String to copy from.
- * Return: 0 if Successful and NULL if string is NULL.
+ * strlen - Returns the length of thr string.
+ * @s: String to count.
+ * Return: Strlen.
+ */
+int strlen(char *s)
+{
+	int c;
+
+	while (s[c] != '\0')
+	{
+		c++;
+	}
+	return (c);
+}
+
+/**
+ * strcopy - copyies elemnts in a string or array.
+ * @src: Source of the elements to be copied.
+ * @dest: Destination to place the copied elements.
+ * Return: dest.
+ */
+char *strcopy(char *src, char *dest)
+{
+	int l = 0;
+
+	while (src[l] != '\0')
+	{
+		src[l] = dest[l];
+		l++;
+	}
+	if (dest[l] != '\0')
+	{
+		return (dest);
+	}
+}
+
+/**
+ * _strdup - Returns pointer to a new copied string.
+ * @str: String of elements copied.
+ * Return: Pointer to the copied string.
  */
 char *_strdup(char *str)
 {
-	unsigned int n;
+	char *dest;
+	unsigned int size;
 
-	if (str == NULL)
+	if (str == '\0')
 	{
 		return (NULL);
 	}
-	size_t n = strlen(str);
-	char *new_str = (char *)malloc((n + 1) * sizeof(char));
+	size = strlen[str] + 1;
 
-	if (new_str == NULL)
+	dest = (char *) malloc(size * sizeof(char));
+	if dest = '\0'
 	{
 		return (NULL);
 	}
-	strcpy(new_str, str);
-	return (new_str);
+	strcopy(str, dest);
+	return (dest);
 }
+
