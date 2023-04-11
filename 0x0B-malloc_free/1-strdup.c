@@ -6,7 +6,7 @@
  * @s: String to count.
  * Return: Strlen.
  */
-int strlen(char *s)
+int _strlen(char *s)
 {
 	unsigned int c;
 
@@ -50,7 +50,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	size = strlen(str) + 1;
+	size = _strlen(str) + 1;
 
 	dest = (char *) malloc(size * sizeof(char));
 	if (dest == 0)
