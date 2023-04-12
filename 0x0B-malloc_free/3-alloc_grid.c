@@ -1,4 +1,4 @@
-#include <stlib.h>
+#include <stdlib.h>
 #include "main.h"
 /**
  * alloc_grid - Allocates memory to a 2d array.
