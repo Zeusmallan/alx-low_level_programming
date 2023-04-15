@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _stract - A function that concatenates two strings.
+ * _strncat - A function that concatenates two strings.
  * @dest: Destination.
  * @src: Character source.
  * @n: an array.
