@@ -1,4 +1,4 @@
-#ifndef PUT_TOGETHER_H
-#define PUT_TOGETHER_H
+#ifndef PUT_TOGETHER
+#define PUT_TOGETHER
 #define sum(x, y) ((x) + (y))
 #endif
