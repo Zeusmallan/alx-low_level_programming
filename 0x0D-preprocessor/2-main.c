@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Main function that prints the name of the file 
+ * main - Main function that prints the name of the file
  * a programme was compiled from.
  * Return: 0 (Success).
  */
