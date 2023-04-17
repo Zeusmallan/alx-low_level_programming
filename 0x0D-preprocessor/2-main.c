@@ -4,8 +4,8 @@
  * a programme was compiled from.
  * Return: 0 (Success).
  */
-int main(void)
+void main(void)
 {
 	printf("%s\n", __FILE__);
-	return (0)
+	return (0);
 }
