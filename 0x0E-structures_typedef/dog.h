@@ -14,7 +14,7 @@ struct dog
 	char *owner;
 };
 typedef struct dog dog_d;
-void info_dog(struct dog *d, char *name, float age, chare *owner);
+void info_dog(struct dog *d, char *name, float age, char *owner);
 void show_dog(struct dog *d);
 dog_d *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
