@@ -1,12 +1,12 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <stdarg.h>
 #include "variadic_functions.h"
+
 /**
- * print_numbers - Prints numbers, follwed by a new line.
- * @separator: String that comes in between numbers.
- * @n: The intergers passed as arguments.
- * @...: Variable passed, indefinite number of variables.
+ * print_numbers - Print numbers passed as arguements.
+ * @separator: Elements of a string to be printed in between numbers.
+ * @n: Number of intergers passed as arguemnts.
+ * @...: Indefinite number of parameters.
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
@@ -17,10 +17,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		printf("%d", va_arg(nums, int));
-		if (i != (n - 1) && separator != NULL)
+		printf("%d", va_arg(digits, int));
+		if (i != (n-1) && separator != NULL)
 			printf("%s", separator);
 	}
-	printf("\n");
+	printf ("\n");
 	va_end(digits);
 }
