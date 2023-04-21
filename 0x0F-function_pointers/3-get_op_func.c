@@ -1,5 +1,5 @@
 #include "3-calc.h"
-#include <stdllib.h>
+#include <stdlib.h>
 /**
  * get_op_func - Allows the user tp select an operation to perform.
  * @s: The opreator paseed as argument.
@@ -8,7 +8,7 @@
  */
 int (*get_op_func(char *s))(int, int)
 {
-	op_t ops[] = {
+	op_t op[] = {
 		{"+", op_add},
 		{"-", op_sub},
 		{"*", op_mul},
