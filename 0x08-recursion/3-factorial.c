@@ -3,7 +3,7 @@
  * factorial - Function that returns the factorial of a given number.
  * @n: Represents any number input.
  * Return: Factorial of n.
- * -1 indicates erorr factorial of 0 is 1
+ * -1 indicates erorr, factorial of 0 and 1 is 1
  */
 int factorial(int n)
 {
@@ -20,5 +20,3 @@ int factorial(int n)
 		return (n * factorial(n - 1));
 	}
 }
-
-
