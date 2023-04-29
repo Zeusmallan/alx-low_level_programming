@@ -6,10 +6,7 @@
  * @head: Pointer to the first node.
  * @n: The constant data type to store in the node.
  */
-struct listint_t{
-	int a;
-	struct node *pointer;
-};
+
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *new;
@@ -23,7 +20,5 @@ listint_t *add_nodeint(listint_t **head, const int n)
 		return (NULL);
 	}
 	else
-	{
 	return (new);
-	}
 }
