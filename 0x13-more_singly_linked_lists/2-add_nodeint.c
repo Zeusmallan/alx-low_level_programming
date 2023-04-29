@@ -2,7 +2,7 @@
 #include "lists.h"
 #include <stdlib.h>
 /**
- * *add_nodeint - Function that adds new node to the begining of the list.
+ * add_nodeint - Function that adds new node to the begining of the list.
  * @head: Pointer to the first node.
  * @n: The constant data type to store in the node.
  */
