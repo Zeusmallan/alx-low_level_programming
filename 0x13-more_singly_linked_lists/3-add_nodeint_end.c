@@ -7,10 +7,6 @@
  * @n: Data to be added to the end of the node.
  * Return: Pointer to the new node.
  */
-struct listint_t{
-	int n;
-	struct listint_t *pointer;
-};
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *end_node;
