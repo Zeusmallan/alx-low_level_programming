@@ -17,6 +17,8 @@ void free_listint2(listint_t **head)
 		printf("Error:There is only one node with NULL pointer already\n");
 		return;
 	}
+	else
+	{
 	present = *head;
 	while (present != NULL)
 	{
@@ -25,4 +27,5 @@ void free_listint2(listint_t **head)
 		present = next;
 	}
 	*head = NULL;
+	}
 }
