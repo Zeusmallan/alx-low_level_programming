@@ -13,6 +13,8 @@ size_t print_listint(const listint_t *h)
 	{
 		return (0);
 	}
+	else
+	{
 	while (h != NULL)
 	{
 		printf("%d\n", h->n);
@@ -20,4 +22,5 @@ size_t print_listint(const listint_t *h)
 		elements++;
 	}
 	return (elements);
+	}
 }
