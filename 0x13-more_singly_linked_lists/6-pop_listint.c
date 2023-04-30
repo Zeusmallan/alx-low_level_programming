@@ -12,9 +12,8 @@ int pop_listint(listint_t **head)
 	listint_t *present;
 	int data_in_node;
 
-	if (*head == NULL || head == NULL)
+	if (*head == NULL)
 	{
-		printf("There is nothing to delete, the list is empty\n");
 		return (0);
 	}
 	else
