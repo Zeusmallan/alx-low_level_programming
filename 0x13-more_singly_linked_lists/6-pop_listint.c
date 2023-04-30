@@ -4,7 +4,7 @@
 /**
  * pop_listint - Function that deletes the first node of a list.
  * @head: Pointer that points to the pointer of the first node.
- * Return: 0 if the Node is empty and 
+ * Return: 0 if the Node is empty and
  * the pointer to the new node upon completion.
  */
 int pop_listint(listint_t **head)
@@ -19,10 +19,10 @@ int pop_listint(listint_t **head)
 	}
 	else
 	{
-		present = *head;
-		*head = (*head)->next;
-		data_in_node = present->n;
-		free(present);
+		present = (*head)->next;
+		data_in_node = (*head)->n;
+		free(*head);
+		*head = present;
 	}
 	return (data_in_node);
 }
