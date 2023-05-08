@@ -11,8 +11,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *buffer;
 	ssize_t file_ptr;
-	ssize_t size = -1;
-	ssize_t display = -1;
+	ssize_t size;
+	ssize_t display;
 
 	file_ptr = open(filename, O_RDONLY);
 	if (file_ptr == -1)
@@ -21,11 +21,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	else
 	{
+		if (file_ptr != 0)
+		{
 		buffer = malloc(sizeof(char) * letters);
 		size = read(file_ptr, buffer, letters);
 		display = write(STDOUT_FILENO, buffer, size);
-		free (buffer);
+		free(buffer);
 		close(file_ptr);
+		}
 	}
 	return (display);
 }
