@@ -21,14 +21,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	else
 	{
-		if (file_ptr != -1)
-		{
-			buffer = malloc(sizeof(char) * letters);
-			size = read(file_ptr, buffer, letters);
-			display = write(STDOUT_FILENO, buffer, size);
-			free (buffer);
-			close(file_ptr);
-		}
+		buffer = malloc(sizeof(char) * letters);
+		size = read(file_ptr, buffer, letters);
+		display = write(STDOUT_FILENO, buffer, size);
+		free (buffer);
+		close(file_ptr);
 	}
 	return (display);
 }
