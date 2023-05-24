@@ -14,22 +14,51 @@
  * @argv: String of characters entered on the command line.
  * Return: 0 when successful.
  */
-int main(int argc, char **argv)
+int main(void)
 {
-	if (argc > 1)
+	char *buffer = NULL;
+	size_t buffer_size = 0;
+	char *tokens[MAXIMUM_TOKENS] = {NULL};
+	ssize_t args;
+	char *sh_prompt = "$ ";
+
+	if (isatty(STDIN_FILENO))
 	{
-		if (_strcmp(argv[1], "env") == 0)
+		while (1)
 		{
-			print_environment();
-		}
-		else
-		{
-			execute(argv[1], argv + 1);
+			write(STDOUT_FILENO, sh_prompt, _strlen(sh_prompt));
+			args = getline(&buffer, &buffer_size, stdin);
+			if (args == -1)
+			{
+				if (feof(stdin))
+				{
+					break;
+				}
+				else
+				{
+					perror("Getline Failure");
+					free(buffer);
+					exit(EXIT_FAILURE);
+				}
+			}
+			if (buffer[args - 1] == '\n')
+			{
+				buffer[args - 1] = '\0';
+				tokenize(buffer, tokens);
+				execute(tokens[0], tokens);
+			}
 		}
 	}
+	else
 	{
-		user();
+		args = getline(&buffer, &buffer_size, stdin);
+		if (args != -1)
+		{
+			buffer[args - 1] = '\0';
+			tokenize(buffer, tokens);
+			execute(tokens[0], tokens);
+		}
 	}
+	free(buffer);
 	return (0);
 }
-
